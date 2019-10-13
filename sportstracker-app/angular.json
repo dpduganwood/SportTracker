@@ -24,8 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/style.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/css/fullcalendar.css"
             ],
             "scripts": []
           },
@@ -85,8 +84,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/css/style.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/css/fullcalendar.css"
             ],
             "scripts": []
           }
