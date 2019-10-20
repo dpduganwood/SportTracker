@@ -21,12 +21,44 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/img"
             ],
             "styles": [
-              "src/css/fullcalendar.css"
+              "src/css/animate.css",
+              "src/css/aos.css",
+              "src/css/bootstrap.min.css",
+              "src/css/font-awesome.min.css",
+              "src/css/magnific-popup.css",
+              "src/css/nice-select.css",
+              "src/css/owl.carousel.min.css",
+              "src/css/style.css",
+              "src/css/swiper.min.css",
+              "src/css/themify-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/aos.js",
+              "src/js/bootstrap.min.js",
+              "src/js/contact.js",
+              "src/js/custom.js",
+              "src/js/gmaps.min.js",
+              "src/js/jquery-1.12.1.min.js",
+              "src/js/jquery-3.3.1.slim.min.js",
+              "src/js/jquery.ajaxchimp.min.js",
+              "src/js/jquery.easing.min.js",
+              "src/js/jquery.form.js",
+              "src/js/jquery.magnific-popup.js",
+              "src/js/jquery.nice-select.min.js",
+              "src/js/jquery.validate.min.js",
+              "src/js/mail-script.js",
+              "src/js/masonry.pkgd.js",
+              "src/js/masonry.pkgd.min.js",
+              "src/js/owl.carousel.min.js",
+              "src/js/particles.min.js",
+              "src/js/popper.min.js",
+              "src/js/slick.min.js",
+              "src/js/swiper_custom.js",
+              "src/js/swiper.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -81,12 +113,44 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/img"
             ],
             "styles": [
-              "src/css/fullcalendar.css"
+              "src/css/animate.css",
+              "src/css/aos.css",
+              "src/css/bootstrap.min.css",
+              "src/css/font-awesome.min.css",
+              "src/css/magnific-popup.css",
+              "src/css/nice-select.css",
+              "src/css/owl.carousel.min.css",
+              "src/css/style.css",
+              "src/css/swiper.min.css",
+              "src/css/themify-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/aos.js",
+              "src/js/bootstrap.min.js",
+              "src/js/contact.js",
+              "src/js/custom.js",
+              "src/js/gmaps.min.js",
+              "src/js/jquery-1.12.1.min.js",
+              "src/js/jquery-3.3.1.slim.min.js",
+              "src/js/jquery.ajaxchimp.min.js",
+              "src/js/jquery.easing.min.js",
+              "src/js/jquery.form.js",
+              "src/js/jquery.magnific-popup.js",
+              "src/js/jquery.nice-select.min.js",
+              "src/js/jquery.validate.min.js",
+              "src/js/mail-script.js",
+              "src/js/masonry.pkgd.js",
+              "src/js/masonry.pkgd.min.js",
+              "src/js/owl.carousel.min.js",
+              "src/js/particles.min.js",
+              "src/js/popper.min.js",
+              "src/js/slick.min.js",
+              "src/js/swiper_custom.js",
+              "src/js/swiper.min.js"
+            ]
           }
         },
         "lint": {
