@@ -1,9 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+
+import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
+import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
+import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
+const config: SocketIoConfig = { 
+  url: 'http://localhost:4200', options: {}
+};
 
 @NgModule({
   declarations: [
@@ -12,7 +21,10 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot([]),
+    SocketIoModule.forRoot(config),
+    CalendarModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
