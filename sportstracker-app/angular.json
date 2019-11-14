@@ -33,7 +33,11 @@
               "src/css/owl.carousel.min.css",
               "src/css/style.css",
               "src/css/swiper.min.css",
-              "src/css/themify-icons.css"
+              "src/css/themify-icons.css",
+              "src/ej2/ej2-base/styles/materials.css",
+              "src/ej2/ej2-buttons/styles/materials.css",
+              "src/ej2/ej2-calendars/styles/materials.css",
+              "src/ej2/ej2-popups/styles/materials.css"
             ],
             "scripts": [
               "src/js/aos.js",
@@ -126,7 +130,11 @@
               "src/css/owl.carousel.min.css",
               "src/css/style.css",
               "src/css/swiper.min.css",
-              "src/css/themify-icons.css"
+              "src/css/themify-icons.css",
+              "src/ej2/ej2-base/styles/materials.css",
+              "src/ej2/ej2-buttons/styles/materials.css",
+              "src/ej2/ej2-calendars/styles/materials.css",
+              "src/ej2/ej2-popups/styles/materials.css"
             ],
             "scripts": [
               "src/js/aos.js",
