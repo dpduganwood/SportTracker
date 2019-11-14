@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarDataService } from '../services/calendar-data.service';
+//import * as SportsFeed from '../sports-feed/sports-feed.js';
+import { getData } from '../../app/sports-feed/sports-feed.js'
 
 @Component({
   selector: 'app-home',
@@ -10,6 +13,6 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    getData();
   }
-
 }

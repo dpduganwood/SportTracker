@@ -57,7 +57,8 @@
               "src/js/popper.min.js",
               "src/js/slick.min.js",
               "src/js/swiper_custom.js",
-              "src/js/swiper.min.js"
+              "src/js/swiper.min.js",
+              "src/app/sports-feed/sports-feed.js"
             ]
           },
           "configurations": {
@@ -149,7 +150,8 @@
               "src/js/popper.min.js",
               "src/js/slick.min.js",
               "src/js/swiper_custom.js",
-              "src/js/swiper.min.js"
+              "src/js/swiper.min.js",
+              "src/app/sports-feed/sports-feed.js"
             ]
           }
         },
