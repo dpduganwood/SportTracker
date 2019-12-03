@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarDataService } from '../services/calendar-data.service';
 import { getData } from './test.js'
-import '../fullcalendar/packages/core/main'
 
 @Component({
   selector: 'app-home',
