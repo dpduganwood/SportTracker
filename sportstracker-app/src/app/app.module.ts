@@ -12,6 +12,7 @@ import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
+import { CalendarComponent } from './calendar/calendar.component';
 const config: SocketIoConfig = { 
   url: 'http://localhost:4200', options: {}
 };
@@ -19,7 +20,8 @@ const config: SocketIoConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,

@@ -37,7 +37,10 @@
               "src/ej2/ej2-base/styles/materials.css",
               "src/ej2/ej2-buttons/styles/materials.css",
               "src/ej2/ej2-calendars/styles/materials.css",
-              "src/ej2/ej2-popups/styles/materials.css"
+              "src/ej2/ej2-popups/styles/materials.css",
+              "src/app/fullcalendar/packages/core/main.css",
+              "src/app/fullcalendar/packages/daygrid/main.css",
+              "./node_modules/fullcalendar/dist/fullcalendar.min.css"
             ],
             "scripts": [
               "src/js/aos.js",
@@ -134,7 +137,9 @@
               "src/ej2/ej2-base/styles/materials.css",
               "src/ej2/ej2-buttons/styles/materials.css",
               "src/ej2/ej2-calendars/styles/materials.css",
-              "src/ej2/ej2-popups/styles/materials.css"
+              "src/ej2/ej2-popups/styles/materials.css",
+              "src/app/fullcalendar/packages/core/main.css",
+              "src/app/fullcalendar/packages/daygrid/main.css"
             ],
             "scripts": [
               "src/js/aos.js",

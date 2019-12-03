@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarDataService } from '../services/calendar-data.service';
-//import * as SportsFeed from '../sports-feed/sports-feed.js';
-//import { getData } from '../../app/sports-feed/sports-feed.js'
 import { getData } from './test.js'
+import '../fullcalendar/packages/core/main'
 
 @Component({
   selector: 'app-home',
@@ -14,6 +13,15 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // document.addEventListener('DOMContentLoaded', function() {
+    // var calendarEl = document.getElementById('calendar');
+
+    // var calendar = new Calendar(calendarEl, {
+    //   plugins: [ dayGridPlugin ]
+    // });
+
+    //   calendar.render();
+    // });
     getData();
   }
 }

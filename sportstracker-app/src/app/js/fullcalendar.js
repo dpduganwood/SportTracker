@@ -12,7 +12,7 @@
  
 (function($, undefined) {
 
-
+console.log('here!')
 ;;
 
 var defaults = {
@@ -258,6 +258,7 @@ function Calendar(element, options, eventSources) {
 	
 	
 	function initialRender() {
+		console.log("initial render")
 		tm = options.theme ? 'ui' : 'fc';
 		element.addClass('fc');
 		if (options.isRTL) {
@@ -805,6 +806,7 @@ function Header(calendar, options) {
 								)
 								.click(function() {
 									if (!button.hasClass(tm + '-state-disabled')) {
+										console.log("click 3")
 										buttonClick();
 									}
 								})
@@ -2451,6 +2453,7 @@ function BasicView(element, calendar, viewName) {
 	
 	
 	function dayBind(days) {
+		console.log("clicked day")
 		days.click(dayClick)
 			.mousedown(daySelectionMousedown);
 	}
@@ -2459,6 +2462,7 @@ function BasicView(element, calendar, viewName) {
 	function dayClick(ev) {
 		if (!opt('selectable')) { // if selectable, SelectionManager will worry about dayClick
 			var date = parseISO8601($(this).data('date'));
+			console.log("clicked day")
 			trigger('dayClick', this, date, true, ev);
 		}
 	}
@@ -2521,6 +2525,7 @@ function BasicView(element, calendar, viewName) {
 	function reportDayClick(date, allDay, ev) {
 		var cell = dateToCell(date);
 		var _element = bodyCells[cell.row*colCnt + cell.col];
+		console.log("clicked day")
 		trigger('dayClick', _element, date, allDay, ev);
 	}
 	
@@ -3026,7 +3031,7 @@ function AgendaView(element, calendar, viewName) {
 
 	function buildDayTable() {
 		var html = buildDayTableHTML();
-
+		console.log("build day table")
 		if (dayTable) {
 			dayTable.remove();
 		}
@@ -3282,12 +3287,14 @@ function AgendaView(element, calendar, viewName) {
 	
 
 	function dayBind(cells) {
+		console.log("day clicked 2")
 		cells.click(slotClick)
 			.mousedown(daySelectionMousedown);
 	}
 
 
 	function slotBind(cells) {
+		console.log("day clicked 2")
 		cells.click(slotClick)
 			.mousedown(slotSelectionMousedown);
 	}
@@ -3303,8 +3310,10 @@ function AgendaView(element, calendar, viewName) {
 				var hours = Math.floor(mins/60);
 				date.setHours(hours);
 				date.setMinutes(mins%60 + minMinute);
+				console.log("clicked day")
 				trigger('dayClick', dayBodyCells[col], date, false, ev);
 			}else{
+				console.log("clicked day")
 				trigger('dayClick', dayBodyCells[col], date, true, ev);
 			}
 		}
@@ -3609,6 +3618,7 @@ function AgendaView(element, calendar, viewName) {
 
 
 	function reportDayClick(date, allDay, ev) {
+		console.log("clicked day")
 		trigger('dayClick', dayBodyCells[dateToCell(date).col], date, allDay, ev);
 	}
 	
@@ -4588,6 +4598,7 @@ function View(element, calendar, viewName) {
 
 	
 	function trigger(name, thisObj) {
+		console.log("trigger called!")
 		return calendar.trigger.apply(
 			calendar,
 			[name, thisObj || t].concat(Array.prototype.slice.call(arguments, 2), [t])
@@ -4689,6 +4700,7 @@ function View(element, calendar, viewName) {
 			.click(function(ev) {
 				if (!eventElement.hasClass('ui-draggable-dragging') &&
 					!eventElement.hasClass('ui-resizable-resizing')) {
+						console.log("event click")
 						return trigger('eventClick', this, event, ev);
 					}
 			})
