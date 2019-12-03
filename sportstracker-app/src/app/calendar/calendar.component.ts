@@ -2,12 +2,21 @@ import { Component, OnInit, Input } from '@angular/core';
 import * as $ from 'jquery';
 import * as moment from 'moment';
 import 'fullcalendar';
+import { getData } from '../home/test'
+
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
+
+  eventClicked: boolean
+  hTeams: any
+  vTeams: any
+  hLogos: any
+  vLogos: any
+  gameDate: any
 
   @Input()
       set configurations(config: any) {
@@ -19,6 +28,7 @@ export class CalendarComponent implements OnInit {
     defaultConfigurations: any;
 
   constructor() {
+    this.eventClicked = false
     this.defaultConfigurations = {
 
     editable: true,
@@ -70,7 +80,14 @@ export class CalendarComponent implements OnInit {
   }
 
   dayClick(date, jsEvent, activeView) {
-    console.log(date.toDate())
+    console.log(date)
+    this.hTeams = getData(this.formatDate(date)).hTeams
+    this.vTeams = getData(this.formatDate(date)).vTeams
+    this.hLogos = getData(this.formatDate(date)).hLogos
+    this.vLogos = getData(this.formatDate(date)).vLogos
+    this.gameDate = date.format('MMMM D')
+    this.eventClicked = true
+
     console.log('day click');
   }
   eventDragStart(timeSheetEntry, jsEvent, ui, activeView) {
@@ -78,5 +95,20 @@ export class CalendarComponent implements OnInit {
   }
   eventDragStop(timeSheetEntry, jsEvent, ui, activeView) {
     console.log('event drag end');
+  }
+
+  formatDate(date) {
+    console.log(date)
+    var month = '' + (date.month() + 1),
+        day = '' + date.date(),
+        year = date.year();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    console.log(day)
+    return [year, month, day].join('-');
   }
 }
