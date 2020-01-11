@@ -24,8 +24,8 @@ exports.getData = function(date) {
                 hlogos.push(gameData[i].hTeam.logo)
                 vlogos.push(gameData[i].vTeam.logo)
                 if (gameData[i].hTeam.score.points != "") {
-                    hteams.push(gameData[i].hTeam.fullName + " " + gameData[i].hTeam.score.points + ", ")
-                    vteams.push(gameData[i].vTeam.fullName + " " + gameData[i].vTeam.score.points)
+                    hteams.push(gameData[i].hTeam.shortName + " " + gameData[i].hTeam.score.points + " vs ")
+                    vteams.push(gameData[i].vTeam.shortName + " " + gameData[i].vTeam.score.points + "\n|| Game Status: " + gameData[i].statusGame)
                 }
                 else {
                     hteams.push(gameData[i].hTeam.fullName + " vs ")
